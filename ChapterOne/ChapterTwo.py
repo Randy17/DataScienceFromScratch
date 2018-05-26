@@ -147,3 +147,55 @@ s.add(4)
 print(s.contains(4))
 s.remove(3)
 print(s.contains(3))
+
+
+#zip
+list1 = ['a', 'b', 'c']
+list2 = [1,2,3]
+print(list(zip(list1, list2)))
+
+pairs = [('a', 1), ('b', 2), ('c', 3)]
+print(list(zip(*pairs)))
+
+
+#args and kwargs
+def doubler(f):
+    def g(x):
+        return 2 * f(x)
+    return g
+
+def f1(x):
+    return x + 1
+
+g = doubler(f1)
+
+def f2(x, y):
+    return x + y
+
+#g = doubler(f2)
+#print(g(1, 2))
+
+print(g(3))
+
+def magic(*args, **kwargs):
+    print('unnamed: ', args)
+    print('key args: ', kwargs)
+
+magic(1, 2, 3, key="word", key2='word2')
+
+
+def other_magic(x, y, z):
+    return x * y * z
+
+x_y_list = [1, 2]
+z_dict = {'z' : 3}
+print(other_magic(*x_y_list, **z_dict))
+
+
+def doubler_correct(f):
+    def g(*args, **kwargs):
+        return 2 * f(*args, **kwargs)
+    return g
+
+g = doubler_correct(f2)
+print(g(1,2))
