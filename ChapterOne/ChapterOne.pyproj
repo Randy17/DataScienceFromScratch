@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>33467dca-7278-48ed-b8de-bc1d63550491</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ChapterFour.py</StartupFile>
+    <StartupFile>ChapterFive.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ChapterFive.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ChapterFour.py">
       <SubType>Code</SubType>
     </Compile>
