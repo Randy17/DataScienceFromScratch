@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>33467dca-7278-48ed-b8de-bc1d63550491</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ChapterFive.py</StartupFile>
+    <StartupFile>ChapterSix.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ChapterFour.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChapterSix.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ChapterThree.py">
